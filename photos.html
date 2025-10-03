@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>写真ギャラリー | 大平奏一郎</title>
+<link href="css/bootstrap-3.4.1.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="photos_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+<header class="row">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Soichiro Ohira's Portfolio</a> </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">自己紹介</a></li>
+          <li><a href="index.html#works">作品</a></li>
+          <li><a href="#">写真</a></li>
+          <li><a href="activities.html">活動</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+<section id="hero" class="row">
+  <div class="header-image">
+    <div class="catch text-white">
+      <h1>Photo Gallery</h1>
+      <p>趣味で撮影した写真集</p>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="row showcase">
+<div class="col-xs-12">
+  <h2 class="sub-midashi">Photo Gallery</h2>
+  <p class="gallery-description">大学生活の中でサークル活動や趣味として撮影してきた写真を紹介します。<br>
+    カメラはNikon Z50をメインに、iPhoneを使用することもあります。<br>
+    ポートレートや風景、街並み、自然の美しさを切り取ることが好きです。</p>
+</div>
+
+<!-- 写真ギャラリー -->
+<div class="photo-gallery">
+<section id="portrait-gallery" class="row showcase category-section">
+  <div class="col-xs-12">
+    <h2 class="category-title"> <i class="fa fa-mountain"></i> 人物写真 <span class="category-subtitle">Portrait Photography</span> </h2>
+    <p class="category-description">友人やイベントでの人物撮影、表情や雰囲気を大切にした作品集です。</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/maedori_back.jpg" class="img-responsive" alt="ポートレート1" data-title="成人式前撮り１" data-desc="友人の成人式の前撮りに協力しました。儚さを意識した構図とレタッチにしました。" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>成人式前撮り１</h3>
+          <p>スタジオ撮影</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/maedori_side.jpg" class="img-responsive" alt="ポートレート2" data-title="成人式前撮り２" data-desc="友人の成人式の前撮りに協力しました。こちらは横顔の自然な笑顔を引き出すよう意識しました。" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>成人式前撮り２</h3>
+          <p>スタジオ撮影</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/glasses.jpg" class="img-responsive" alt="ポートレート3" data-title="横顔" data-desc="逆光で撮ることで横顔の輪郭を強調し、眼鏡に夕日を反射させました" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>横顔</h3>
+          <p>千綿駅</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/hanami_girl.jpg" class="img-responsive" alt="ポートレート4" data-title="さくらのなか" data-desc="手前で桜をぼかして奥の人物を強調させました。" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>さくらのなか</h3>
+          <p>中尾城公園</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/hanami_boy.jpg" class="img-responsive" alt="ポートレート5" data-title="桜を撮る" data-desc="桜を撮ろうと考えてる微妙な表情の瞬間を切り取りました" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>桜を撮る</h3>
+          <p>大村公園</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/guiter_girl.jpg" class="img-responsive" alt="ポートレート6" data-title="震えろ" data-desc="ライブ中の写真、あえてブレさせることで躍動感を演出しました" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>震えろ</h3>
+          <p>軽音サークルライブ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/guiter_boy.jpg" class="img-responsive" alt="ポートレート7" data-title="最高潮" data-desc="ライブ中の写真、盛り上がりが最高潮に達した瞬間を捉えました" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>最高潮</h3>
+          <p>軽音サークルライブ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/mirrorGirl.jpg" class="img-responsive" alt="ポートレート8" data-title="写して見る" data-desc="友人２人が笑ってる様子を切り抜きました。鏡越しで見ると、青春を画面越しで見るような、何とも言えない良さを感じます。" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>写して見る</h3>
+          <p>千綿駅</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="portrait">
+    <div class="photo-item portrait-item" onclick="openModal(this)"> <img src="assets/images/myfriend.jpg" class="img-responsive" alt="ポートレート9" data-title="Myfriend" data-desc="友人の後姿を鮮やかなあ大空をバックに撮りました。こういう何気ない日常が青春だと感じます。" data-category="portrait">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>Myfriend</h3>
+          <p>南島原市農道</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 風景写真セクション -->
+<section id="landscape-gallery" class="row showcase category-section">
+  <div class="col-xs-12">
+    <h2 class="category-title"> <i class="fa fa-mountain"></i> 動物・自然・風景の写真 <span class="category-subtitle">Landscape Photography</span> </h2>
+    <p class="category-description">自然の美しさや建築物など、風景を中心とした作品集です。</p>
+  </div>
+  
+  <!-- 風景写真1-9 -->
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/tableware.jpg" class="img-responsive" alt="風景写真1" data-title="ティータイム" data-desc="グラバー園の食器を横からとりました。少し暗めで、もの寂しさを感じるレタッチを意識しました。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>ティータイム</h3>
+          <p>グラバー園</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/lantern.jpg" class="img-responsive" alt="風景写真2" data-title="らんたんフェス" data-desc="グラバー園のエスカレーターにランタンが釣り下がっていました。全体を緑っぽい色合いにすることで、色褪せたレトロな雰囲気を出しました。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>らんたんフェス</h3>
+          <p>グラバー園</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/train.jpg" class="img-responsive" alt="風景写真3" data-title="背伸びして遠出" data-desc="数年前に初めて友達と電車に乗って遠出した写真です。早朝の、何とも言えないワクワクした印象が感じられます。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>背伸びして遠出</h3>
+          <p>島原鉄道から</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/flower.jpg" class="img-responsive" alt="風景写真4" data-title="威風堂々" data-desc="花を中央に配置し、ビネットと背景のボケで、美しい花の力強さを演出しました。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>威風堂々</h3>
+          <p>グラバー園</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/hibiscus.jpg" class="img-responsive" alt="風景写真5" data-title="白のハイビスカス" data-desc="石垣島に行ったきに撮ったハイビスカス。背景の青空に白色の花がよく映えます。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>白のハイビスカス</h3>
+          <p>石垣島</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/plant.jpg" class="img-responsive" alt="風景写真6" data-title="光のどけき" data-desc="窓から差し込む柔らかな光が穏やかな雰囲気を演出するのとは対照的に、手前の植物から確かな生命力を感じます。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>光のどけき</h3>
+          <p>グラバー園</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/moon.jpg" class="img-responsive" alt="風景写真7" data-title="十五夜お月様" data-desc="石垣島に行ったとき、十六夜の月を見れたので撮りました。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>十六夜の月</h3>
+          <p>石垣島</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/plantSilhouette.jpg" class="img-responsive" alt="風景写真8" data-title="早朝に田舎道" data-desc="早朝に地元を散歩した際の写真です。住んでいた時はただの草むらでも、久し振りに帰省すると、美しく豊かな自然の一部です。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>早朝に田舎道</h3>
+          <p>島原半島</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/firework.jpg" class="img-responsive" alt="風景写真9" data-title="打ち上げ花火" data-desc="。複数の大きな花火が咲いた瞬間を狙いました。また、シャッタースピードを遅めにすることで、花火の垂れ下がりを綺麗にとらえることができました。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>打ち上げ花火</h3>
+          <p>南島原市夏祭り</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fade-in" data-category="landscape">
+    <div class="photo-item landscape-item" onclick="openModal(this)"> <img src="assets/images/cat.jpg" class="img-responsive" alt="風景写真8" data-title="ねむり猫" data-desc="雲仙地獄にいたねこです。可愛く眠っているところを撮らせていただきました。" data-category="landscape">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <h3>ねむり猫</h3>
+          <p>雲仙市</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="row footer-copyright">
+  <div class="col-sm-12">
+    <p>Copyright © 2025 Soichiro Ohira</p>
+  </div>
+</footer>
+</div>
+
+<!-- モーダル -->
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる"> <span aria-hidden="true">&times;</span> </button>
+        <h4 class="modal-title" id="modalTitle">写真タイトル</h4>
+      </div>
+      <div class="modal-body text-center"> <img id="modalImage" class="img-responsive center-block" src="" alt="">
+        <p id="modalDescription" class="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.12.4.min.js"></script> 
+<script src="js/bootstrap-3.4.1.js"></script> 
+<script src="photos.js"></script>
+</body>
+</html>
