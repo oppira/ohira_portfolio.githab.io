@@ -34,7 +34,7 @@ body {
 .header-image {
   position: relative;
   height: 540px;
-  background-image: url('assets/images/Myphoto.jpg');
+  background-image: url('images/Myphoto.jpg');
   background-size: cover;
   background-position: center;
 }
